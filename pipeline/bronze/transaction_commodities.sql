@@ -6,6 +6,8 @@ SELECT *,
 FROM cloud_files(
   '/Volumes/lakehouse/raw_public/transaction_commodities',
   'csv',
-  map('header', 'true',
-      'inferSchema', 'true')
+  map(
+    'header', 'true',
+    'inferSchema', 'true'
+  )
 );
